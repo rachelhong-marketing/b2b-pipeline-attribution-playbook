@@ -1,2 +1,6 @@
 attribution.db
 .DS_Store
+__pycache__/
+*.pyc
+exports/
+audit-report.md

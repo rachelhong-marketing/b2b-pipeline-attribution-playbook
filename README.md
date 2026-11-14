@@ -2,7 +2,7 @@
 
 A practical guide to measuring marketing's contribution to pipeline in a B2B CRM, mainly Salesforce, with notes for HubSpot.
 
-Most B2B teams have the tools to show which campaigns created and moved pipeline. What breaks is the chain of records in between: a lead that never gets converted, a contact with no role on the deal, a UTM that never reaches the CRM. This playbook walks through that chain step by step. It also includes sample data, SQL and templates so you can test it yourself.
+Most B2B teams have the tools to show which campaigns created and moved pipeline. What breaks is the chain of records in between: a lead that never gets converted, a contact with no role on the deal, a UTM that never reaches the CRM. This playbook walks through that chain step by step. It also includes an **attribution auditor**: export 7 standard Salesforce reports, and it tells you whether the data can be trusted before it gives you sourced and influenced pipeline. Everything runs on made-up sample data out of the box.
 
 ## The chain
 
@@ -15,6 +15,51 @@ flowchart LR
 ```
 
 If any link is missing, the campaign's credit stops there.
+
+## Run the audit
+
+### With Claude Code (no commands to type)
+
+The repo includes a Claude Code skill, `.claude/skills/pipeline-attribution-auditor/SKILL.md`. Download the repo, open the folder in Claude Code, and ask:
+
+- "Show me how the attribution audit works on the sample data."
+- "Which Salesforce reports do I need to export?"
+- "Audit my exports in exports/2026-11. Our sales cycle is about 9 months."
+- "Can we trust our Campaign Influence numbers?"
+
+The skill walks you through the exports, checks the files, runs the audit and writes a short summary for marketing leaders with the top 3 fixes. The numbers always come from the Python code, not the AI.
+
+### From the command line
+
+Python 3 only, nothing to install.
+
+```bash
+python3 -m auditor guide                     # which Salesforce reports to export
+python3 -m auditor check-files data          # check the files first
+python3 -m auditor audit data --window 180   # run the audit (data/ is the made-up sample)
+python3 -m unittest discover -s tests        # run the tests
+```
+
+To use your own data, follow [docs/export-salesforce-reports.md](docs/export-salesforce-reports.md) and point the commands at your folder. Column labels, US dates, dollar amounts and 18-character IDs from a standard Salesforce export are handled for you.
+
+### What the audit gives you
+
+On the sample data:
+
+| # | Check | Status | Records | Pipeline affected |
+|---|---|---|---|---|
+| 1 | Deals with no contact roles | FIX | 2 | $100,000 |
+| 2 | Unconverted leads at companies with open deals | FIX | 3 | $210,000 |
+| 3 | Engaged contacts missing from their account's open deal | FIX | 1 | $80,000 |
+| 4 | Leads with no lead source | FIX | 2 | - |
+| 5 | Possible duplicate leads (same email) | FIX | 1 | - |
+| 6 | Paid search leads with no GCLID | FIX | 1 | - |
+| 7 | Touches outside the influence window | INFO | 1 | - |
+| 8 | Influence inflated by members who never engaged | FIX | 2 | $250,000 |
+
+Then: headline numbers (83.3% of pipeline marketing sourced, 4 of 6 deals influenced), sourced and influenced pipeline by campaign, the same deals under first-touch, last-touch and even-split attribution, and a fix list naming every record to correct. Check 8 is the one most teams miss: counting email members who were only "Sent" makes the nurture look like it influenced $320,000 of pipeline instead of $150,000.
+
+The exports hold names and emails. The Python auditor runs only on your computer. If you use the Claude Code skill, check your company's policy on CRM data and AI tools first.
 
 ## What's inside
 
@@ -31,7 +76,8 @@ If any link is missing, the campaign's credit stops there.
 
 **Try it yourself**
 - [`data/`](data/): a small, **fully made-up** dataset (accounts, leads, contacts, campaigns, campaign members, opportunities and contact roles), with common data problems built in on purpose. No real companies, people or results. See [data/README.md](data/README.md).
-- [`sql/`](sql/): queries for sourced vs. influenced pipeline, three attribution models, and a data audit. See [sql/README.md](sql/README.md) to run them in SQLite in two minutes.
+- [`auditor/`](auditor/): the Python attribution auditor (see "Run the audit" above), with tests in [`tests/`](tests/).
+- [`sql/`](sql/): the same logic as plain SQL, if you'd rather run it in SQLite or adapt it to your data warehouse. See [sql/README.md](sql/README.md).
 - [`templates/`](templates/): funnel definitions, a lead scoring sheet, a monthly audit checklist, a discrepancy log and spreadsheet formulas.
 
 ## Lessons from the field
@@ -46,7 +92,8 @@ Email campaigns often add everyone on the send list as a campaign member with a 
 
 ## Related
 
-- [B2B Paid Media Planner](https://github.com/rachelhong-marketing/b2b-paid-media-planner): planning the paid media side, including channel roles by funnel stage, budget split, UTM naming and Salesforce campaign structure. Use it to set campaigns up; use this playbook to measure what they did for pipeline.
+- [B2B Paid Media Playbook](https://github.com/rachelhong-marketing/b2b-paid-media-playbook): planning the paid media side, including channel strategy, UTM naming and Salesforce campaign structure. Use it to set campaigns up; use this repo to measure what they did for pipeline.
+- [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner): plan and read campaign tests around leads, MQLs and SQLs instead of clicks.
 
 ## Who this is for
 
