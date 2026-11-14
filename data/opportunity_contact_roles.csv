@@ -1,0 +1,8 @@
+opportunity_id,contact_id,role,is_primary
+O01,K01,Evaluator,N
+O01,K02,Influencer,N
+O01,K03,Decision Maker,Y
+O02,K04,Decision Maker,Y
+O04,K09,Influencer,N
+O04,K10,Decision Maker,Y
+O05,K06,Decision Maker,Y

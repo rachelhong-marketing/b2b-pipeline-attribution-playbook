@@ -1,0 +1,26 @@
+member_id,campaign_id,lead_id,contact_id,status,is_responded,responded_date
+M01,C02,L01,K01,Form Submitted,Y,2026-01-03
+M02,C01,L01,K01,Attended,Y,2026-01-15
+M03,C01,L02,K02,Attended,Y,2026-01-15
+M04,C05,,K02,Clicked,Y,2026-01-25
+M05,C04,L03,K03,Visited Booth,Y,2026-02-20
+M06,C03,L04,K04,Downloaded,Y,2026-01-12
+M07,C01,,K04,Registered,N,2026-01-14
+M08,C05,L05,K05,Clicked,Y,2026-01-20
+M09,C06,L06,K06,Downloaded,Y,2026-02-03
+M10,C05,,K06,Clicked,Y,2026-02-15
+M11,C03,L07,K07,Downloaded,Y,2026-01-14
+M12,C01,,K07,Attended,Y,2026-01-15
+M13,C06,L08,K08,Downloaded,Y,2026-02-05
+M14,C07,,K09,Clicked,Y,2025-06-01
+M15,C01,L09,K09,Attended,Y,2026-01-15
+M16,C04,L10,K10,Visited Booth,Y,2026-02-20
+M17,C03,,K10,Downloaded,Y,2026-03-20
+M18,C02,L11,,Form Submitted,Y,2026-02-10
+M19,C06,L12,,Downloaded,Y,2026-02-04
+M20,C01,L13,,Attended,Y,2026-03-01
+M21,C03,L14,,Downloaded,Y,2026-03-05
+M22,C05,,K04,Sent,N,2026-01-25
+M23,C05,,K09,Sent,N,2026-02-01
+M24,C05,,K10,Received,N,2026-02-01
+M25,C05,,K07,Sent,N,2026-01-25

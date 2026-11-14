@@ -1,0 +1,7 @@
+opportunity_id,account_id,opportunity_name,amount,stage,is_closed,is_won,created_date,close_date,primary_campaign_id
+O01,A001,Northwind Retail - Platform,120000,Closed Won,Y,Y,2026-02-01,2026-04-15,C02
+O02,A002,Bluebird Bank - Measurement,80000,Proposal,N,N,2026-02-15,2026-06-30,C03
+O03,A004,Summit Travel - Platform,60000,Closed Won,Y,Y,2026-02-10,2026-05-01,C03
+O04,A006,Pine Auto - Media,90000,Negotiation,N,N,2026-03-01,2026-07-31,C01
+O05,A003,Cedar Foods - Analytics,30000,Closed Lost,Y,N,2026-02-20,2026-04-30,
+O06,A005,Harbor Health - Platform,40000,Discovery,N,N,2026-03-10,2026-08-31,

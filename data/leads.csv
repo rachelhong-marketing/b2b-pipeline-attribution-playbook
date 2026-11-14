@@ -1,0 +1,16 @@
+lead_id,full_name,company,title,email,lead_source,utm_source,utm_medium,utm_campaign,gclid,created_date,mql_date,status,is_converted,converted_contact_id,converted_account_id
+L01,Maya Lin,Northwind Retail,Director of Marketing,maya@northwindretail.example,Paid Search,google,cpc,2026-q1-attribution,GCLID-0001,2026-01-03,2026-01-15,Converted,Y,K01,A001
+L02,Joel Park,Northwind Retail,VP Marketing,joel@northwindretail.example,Webinar,,,,,2026-01-14,2026-01-15,Converted,Y,K02,A001
+L03,Lisa Gomez,Northwind Retail,Chief Marketing Officer,lisa@northwindretail.example,Event,,,,,2026-02-20,2026-02-20,Converted,Y,K03,A001
+L04,Omar Hadid,Bluebird Bank,Head of Media,omar@bluebirdbank.example,Paid Social,linkedin,paid-social,2026-q1-research-report,,2026-01-12,2026-01-20,Converted,Y,K04,A002
+L05,Priya Shah,Bluebird Bank,Marketing Operations Manager,priya@bluebirdbank.example,Email,,,,,2026-01-20,,Converted,Y,K05,A002
+L06,Tom Reyes,Cedar Foods,Marketing Manager,tom@cedarfoods.example,Content Syndication,,,,,2026-02-03,2026-02-15,Converted,Y,K06,A003
+L07,Ana Costa,Summit Travel,VP Growth,ana@summittravel.example,Paid Social,linkedin,paid-social,2026-q1-research-report,,2026-01-14,2026-01-15,Converted,Y,K07,A004
+L08,Ben Wolfe,Summit Travel,Marketing Analyst,ben@summittravel.example,,,,,,2026-02-05,,Converted,Y,K08,A004
+L09,Carl Nguyen,Pine Auto,Director of Digital,carl@pineauto.example,Webinar,,,,,2026-01-13,2026-01-15,Converted,Y,K09,A006
+L10,Dee Okafor,Pine Auto,Chief Marketing Officer,dee@pineauto.example,Event,,,,,2026-02-20,2026-02-20,Converted,Y,K10,A006
+L11,Sam Ortiz,Bluebird Bank,Director of Analytics,sam@bluebirdbank.example,Paid Search,google,cpc,2026-q1-attribution,,2026-02-10,2026-02-12,MQL,N,,
+L12,Rita Moss,Harbor Health,Marketing Director,rita@harborhealth.example,Content Syndication,,,,,2026-02-04,2026-02-20,MQL,N,,
+L13,Maya Lin,Northwind Retail,Director of Marketing,maya@northwindretail.example,Webinar,,,,,2026-03-01,,Open,N,,
+L14,Kim Tran,Pine Auto,VP Brand,kim@pineauto.example,Paid Social,linkedin,paid-social,2026-q1-research-report,,2026-03-05,2026-03-06,MQL,N,,
+L15,Lou Baker,Cedar Foods,Brand Manager,lou@cedarfoods.example,,,,,,2026-02-25,,Open,N,,

@@ -1,0 +1,8 @@
+campaign_id,campaign_name,campaign_type,channel,start_date,cost
+C01,2026-Q1-Webinar-Measuring-Media,Webinar,Webinar,2026-01-15,8000
+C02,2026-Q1-PaidSearch-Attribution,Paid Search,Paid Search,2026-01-01,12000
+C03,2026-Q1-LinkedIn-Research-Report,Paid Social,Paid Social,2026-01-10,15000
+C04,2026-Q1-TradeShow-Booth,Event,Event,2026-02-20,20000
+C05,2026-Q1-Email-Nurture,Email,Email,2026-01-05,2000
+C06,2026-Q1-ContentSyndication-Guide,Content Syndication,Content Syndication,2026-02-01,10000
+C07,2025-Q2-Email-Nurture,Email,Email,2025-05-01,1500

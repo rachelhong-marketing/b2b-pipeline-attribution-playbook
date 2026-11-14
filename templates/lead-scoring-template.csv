@@ -1,0 +1,16 @@
+score_type,criteria,example_value,points,notes
+Fit,Company size,1000+ employees,15,Example points only. Set yours from past won deals
+Fit,Industry,Target industry list,10,
+Fit,Target account list,Account is on the list,15,
+Fit,Job level,Director or above,15,
+Fit,Department,Marketing,10,
+Fit,Job level,Student or intern,-30,Negative points remove poor fits
+Engagement,Campaign member status: Webinar,Registered,5,Score by campaign member status
+Engagement,Campaign member status: Webinar,Attended,15,
+Engagement,Campaign member status: Event,Visited booth,15,
+Engagement,Campaign member status: Event,Meeting held,25,
+Engagement,Campaign member status: Content,Downloaded,10,
+Engagement,Web activity,Product or pricing page visit,5,
+Engagement,Email,Clicked,3,
+Engagement,Inactivity,No activity in 90 days,-10,Decay keeps scores current
+Fast track,Form,Demo or contact us request,MQL,Fit leads become MQLs right away

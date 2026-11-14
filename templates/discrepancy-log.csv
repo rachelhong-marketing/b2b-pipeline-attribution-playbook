@@ -1,0 +1,3 @@
+date_found,metric,system_a,count_a,system_b,count_b,gap,cause,fix,owner_team,status
+2026-04-05,Leads from paid social Q1,Ad platform,120,Marketing automation,95,25,Repeat form fills (15) and spam or test entries (10),Exclude repeats in platform reporting; add spam filter,Marketing Ops,Done
+2026-04-05,Leads from paid social Q1,Marketing automation,95,CRM,80,15,UTM campaign field not mapped to CRM (9); merged during routing (6),Map field; keep campaign membership on merge,Marketing Ops,In progress

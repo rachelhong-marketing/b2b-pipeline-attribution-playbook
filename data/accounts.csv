@@ -1,0 +1,7 @@
+account_id,account_name,industry,employees,website_domain,is_target_account
+A001,Northwind Retail,Retail,12000,northwindretail.example,Y
+A002,Bluebird Bank,Financial Services,8000,bluebirdbank.example,Y
+A003,Cedar Foods,Consumer Goods,3000,cedarfoods.example,N
+A004,Summit Travel,Travel,5000,summittravel.example,Y
+A005,Harbor Health,Healthcare,9000,harborhealth.example,N
+A006,Pine Auto,Automotive,15000,pineauto.example,Y
