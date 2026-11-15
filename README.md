@@ -1,4 +1,4 @@
-# B2B Pipeline Attribution Playbook
+# B2B Pipeline Attribution Tool
 
 A practical guide to measuring marketing's contribution to pipeline in a B2B CRM, mainly Salesforce, with notes for HubSpot.
 
