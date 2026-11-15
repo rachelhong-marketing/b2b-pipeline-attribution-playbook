@@ -1,5 +1,9 @@
 # B2B Pipeline Attribution Tool
 
+> **B2B Campaign Lifecycle Toolkit**, step 5 of 5
+>
+> 1. Plan (coming soon) → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → 4. Report (coming soon) → **5. Prove**
+
 A practical guide to measuring marketing's contribution to pipeline in a B2B CRM, mainly Salesforce, with notes for HubSpot.
 
 Most B2B teams have the tools to show which campaigns created and moved pipeline. What breaks is the chain of records in between: a lead that never gets converted, a contact with no role on the deal, a UTM that never reaches the CRM. This playbook walks through that chain step by step. It also includes an **attribution auditor**: export 7 standard Salesforce reports, and it tells you whether the data can be trusted before it gives you sourced and influenced pipeline. Everything runs on made-up sample data out of the box.
@@ -90,10 +94,17 @@ A team wanted multi-touch attribution, but the Campaign Influence report came ba
 **2. An influence report can make one email look like it touched every deal.**
 Email campaigns often add everyone on the send list as a campaign member with a status like "Sent" or "Received." If those statuses count, the influence report credits the email on every deal those people are part of, whether or not anyone opened it. Before presenting influenced pipeline, filter to people who actually clicked, attended or downloaded, so the number holds up when sales asks about it. See [Part 7](docs/07-reconcile-and-audit.md).
 
-## Related
+## The B2B Campaign Lifecycle Toolkit
 
-- [B2B Paid Media Playbook](https://github.com/rachelhong-marketing/b2b-paid-media-playbook): planning the paid media side, including channel strategy, UTM naming and Salesforce campaign structure. Use it to set campaigns up; use this repo to measure what they did for pipeline.
-- [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner): plan and read campaign tests around leads, MQLs and SQLs instead of clicks.
+Five tools, one per step of a B2B campaign, from the brief to proving pipeline. Each works on its own; together they cover the whole cycle. All sample data is made up.
+
+| Step | Tool | What it does |
+|---|---|---|
+| 1. Plan | B2B Campaign Assistant (coming soon) | Turn a master brief into channel briefs; review copy and creative before launch. |
+| 2. Set up | [B2B Paid Media Planner](https://github.com/rachelhong-marketing/b2b-paid-media-planner) | Plan channels and retargeting, and set up tracking (UTMs, GCLID, Salesforce campaigns). |
+| 3. Test | [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) | Size tests on leads and MQLs, not clicks, and read the results. |
+| 4. Report | B2B Campaign Reporting Agent (coming soon) | Combine ad platform and CRM data, check the totals and draft insights. |
+| 5. Prove | **B2B Pipeline Attribution Tool** (this repo) | Check the CRM data can be trusted, then show sourced and influenced pipeline. |
 
 ## Who this is for
 

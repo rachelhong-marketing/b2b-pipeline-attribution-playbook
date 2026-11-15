@@ -16,13 +16,13 @@ Lead Source is broad, like "Paid Social." UTMs tell you which ad and campaign.
 - Add custom fields for UTM source, medium, campaign and content, plus **GCLID** for Google Ads clicks.
 - Capture them with **hidden fields** on your forms. HubSpot, Eloqua and Account Engagement forms can all read values from the page URL and pass them into the record without the visitor seeing anything.
 - Make sure they **sync to the CRM**. A common break is UTMs saved in the marketing automation tool but never mapped to Salesforce fields.
-- Agree on one naming pattern for UTMs across every team that runs ads. For a full UTM naming convention, see [B2B Paid Media Playbook: UTM naming](https://github.com/rachelhong-marketing/b2b-paid-media-playbook/blob/main/tracking/utm-naming-convention.md).
+- Agree on one naming pattern for UTMs across every team that runs ads. For a full UTM naming convention, see [B2B Paid Media Planner: UTM naming](https://github.com/rachelhong-marketing/b2b-paid-media-planner/blob/main/tracking/utm-naming-convention.md).
 
 ## 3. Set up campaigns that match how you report
 
 A **campaign** in Salesforce is any program you want credit for: a webinar, an event, a paid search program, an email nurture, a content syndication buy.
 - **Naming:** use one pattern, such as year, quarter, type and name: `2026-Q1-Webinar-Measuring-Media`.
-- **Hierarchy:** group campaigns under parents, like by product or quarterly theme, so results roll up. A three-level example is in [B2B Paid Media Playbook: Salesforce campaign hierarchy](https://github.com/rachelhong-marketing/b2b-paid-media-playbook/blob/main/tracking/salesforce-campaign-hierarchy.md).
+- **Hierarchy:** group campaigns under parents, like by product or quarterly theme, so results roll up. A three-level example is in [B2B Paid Media Planner: Salesforce campaign hierarchy](https://github.com/rachelhong-marketing/b2b-paid-media-planner/blob/main/tracking/salesforce-campaign-hierarchy.md).
 - **Cost:** enter actual cost on the campaign so you can calculate cost per lead and cost per MQL later.
 - **Type and channel:** fill these in the same way every time. They're what you group by in reports.
 
