@@ -2,7 +2,7 @@
 
 > **B2B Campaign Lifecycle Toolkit**, step 5 of 5
 >
-> 1. Plan (coming soon) → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → 4. Report (coming soon) → **5. Prove**
+> [1. Plan](https://github.com/rachelhong-marketing/b2b-campaign-assistant) → [2. Set up](https://github.com/rachelhong-marketing/b2b-paid-media-planner) → [3. Test](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) → [4. Report](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) → **5. Prove**
 
 A practical guide to measuring marketing's contribution to pipeline in a B2B CRM, mainly Salesforce, with notes for HubSpot.
 
@@ -100,10 +100,10 @@ Five tools, one per step of a B2B campaign, from the brief to proving pipeline. 
 
 | Step | Tool | What it does |
 |---|---|---|
-| 1. Plan | B2B Campaign Assistant (coming soon) | Turn a master brief into channel briefs; review copy and creative before launch. |
+| 1. Plan | [B2B Campaign Assistant](https://github.com/rachelhong-marketing/b2b-campaign-assistant) | Turn a master brief into channel briefs; review copy and creative before launch. |
 | 2. Set up | [B2B Paid Media Planner](https://github.com/rachelhong-marketing/b2b-paid-media-planner) | Plan channels and retargeting, then build and check tracking links before launch. |
 | 3. Test | [B2B Campaign Test Planner](https://github.com/rachelhong-marketing/b2b-campaign-test-planner) | Size tests on leads and MQLs, not clicks, and read the results. |
-| 4. Report | B2B Campaign Reporting Agent (coming soon) | Combine ad platform and CRM data, check the totals and draft insights. |
+| 4. Report | [B2B Campaign Reporting Agent](https://github.com/rachelhong-marketing/b2b-campaign-reporting-agent) | Combine ad platform and CRM data, check the totals and draft insights. |
 | 5. Prove | **B2B Pipeline Attribution Tool** (this repo) | Check the CRM data can be trusted, then show sourced and influenced pipeline. |
 
 ## Who this is for
